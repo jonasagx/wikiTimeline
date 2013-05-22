@@ -1,0 +1,15 @@
+== WikiTimeline ==
+Permite que visualizar '''eventos''' e '''dados''' da Wikipédia lusófona, simplifica estudos de ação e reação entre eventos e dados.
+
+=== Eventos ===
+São acontecimentos relevantes para a Wikipédia, por exemplo: 
+* Abr-2013: Eliminação do captcha;
+* Set-2011: Início do programa catalizador;
+* ...
+
+=== Dados ===
+Conjuntos de números para:
+* Novos wikipedistas ao longo do tempo;
+* Número de artigos
+* Acessos
+* ...
