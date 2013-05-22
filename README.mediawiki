@@ -1,5 +1,5 @@
 == WikiTimeline ==
-Permite que visualizar '''eventos''' e '''dados''' da Wikipédia lusófona, simplifica estudos de ação e reação entre eventos e dados.
+Permite visualizar '''eventos''' e '''dados''' da Wikipédia lusófona, simplifica estudos de ação e reação entre eventos e dados.
 
 === Eventos ===
 São acontecimentos relevantes para a Wikipédia, por exemplo: 
