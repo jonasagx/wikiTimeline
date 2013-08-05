@@ -1,0 +1,94 @@
+#content {
+    font: 10px sans-serif;
+    background: #fff !#f2f2f2;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 3 auto;
+    !width: 900px;
+    height: 780px;
+}
+
+section{
+    border: none;
+    border-top: 1px solid #EAEAEA;
+}
+
+h1 {
+    font: normal 3.0em/1.0 OFL Sorts Mill Goudy, Georgia, serif;
+    padding: 4px 4px;
+}
+
+.break{
+    border-bottom: 2px dashed gray;
+    height: 100px;
+    width: auto;
+}
+
+#chart {
+    display: inline-block;
+    position: relative;
+}
+
+#chart path {
+    -webkit-transition: opacity 0.2s linear;
+}
+
+#slider {
+    margin-top: 10px;
+}
+
+.ui-slider-horizontal {
+    height: 5px !important;
+    border-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.ui-slider-handle {
+    border-color: #a0a0a0;
+    height: 20px !important;
+    width: 15px !important;
+    top: -5px !important;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+#legend {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    text-align: left;
+    padding: 5px;
+}
+
+#legend_container {
+    right: 0;
+    bottom: 26px;
+    width: 0;
+}
+
+#chart_container {
+    position: relative;
+    display: inline-block;
+    position: relative;
+}
+
+svg {
+    background: #fff;
+}
+
+#legend .label {
+    color: #404040;
+}
+
+#legend .action {
+    color: black;
+    opacity: 0.5;
+    height: 10px,
+    width: 10px;
+}
+
+#side_panel{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 20px 0;
+}

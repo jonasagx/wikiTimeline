@@ -1,0 +1,30 @@
+var palette = new Rickshaw.Color.Palette( { scheme: 'category10' } );
+
+var dataParser = d3.time.format("%b-%Y").parse
+
+var serieData = [];
+
+d3.tsv("data/editors_total.tsv")
+    .row(function(d){ return { x: dataParser(d.date).getTime()/1000, y: +d.editors_total }; })
+    .get(function(erros, rows){ serieData.push(rows); });
+
+	var graph = new Rickshaw.Graph( {
+	    element: document.getElementById("chart"),
+	    width: document.body.clientWidth * 0.8,
+	    height: 350,
+	    renderer: 'line',
+	    series: [
+		    {
+			color : palette.color(),
+			data : serieData[0]
+		    }
+		]
+	});
+
+	graph.render();
+
+	var axes = new Rickshaw.Graph.Axis.Time( {
+	    graph: graph
+	} );
+
+	axes.render();
