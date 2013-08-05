@@ -13,3 +13,8 @@ Conjuntos de números para:
 * Número de artigos
 * Acessos
 * ...
+
+=== Bibliotecas ===
+* D3
+* Rickshaw
+* jQuery UI
