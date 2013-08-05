@@ -49,16 +49,18 @@
 <body>
 <div id="content">
   <h1>Linha do tempo da Wikipédia</h1>
-  <h2>Alpha</h2>
-  <form id="side_panel">
-    <section>
+  <h2>Versão ß</h2>
+  <div id="side_panel"> 
+  <section>
       <div id="legend"></div>
     </section>
     <section>
-      <label><input type="radio" name="male" checked> Geral</label><br/>
-      <label><input type="radio" name="female"> Comunidade</label><br/>
+      <form id="side_panel" name="events_selector">
+	Gera: <input type="radio" name="evento" checked="" value="geral"> <br/>
+	Comunidadel: <input type="radio" name="evento" value="comunidade"> <br/>
+      </form>
     </section>
-  </form>
+  </div>
   <div id="chart_container">
     <div id="chart"></div>
     <div id="timeline"></div>
