@@ -38,7 +38,7 @@ h1 {
 }
 
 .ui-slider-horizontal {
-    height: 5px !important;
+    height: 10px !important;
     border-color: #e0e0e0;
     margin-bottom: 20px;
 }

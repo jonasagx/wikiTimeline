@@ -2,14 +2,13 @@
 //Variables of global context
 var serie = [];
 var series = [];
-var annotator;
-var graph, scales = [], data2, graph, legend;
+var annotator, graph, scales = [], data2, graph, legend, slider;
 
 function data_render(){
     d3.tsv("data/wiki_data.tsv", function(error, data){  
 	if(error) return console.warn(error);
 
-	var palette = new Rickshaw.Color.Palette( { scheme: 'category10' } );
+	var palette = new Rickshaw.Color.Palette( { scheme: 'spectrum14' } );
 	var dataParser = d3.time.format("%b-%Y").parse;
 
 	data.reverse();
@@ -54,10 +53,10 @@ function data_render(){
 
 	graph = new Rickshaw.Graph( {
 	    element: document.getElementById("chart"),
-	    width: document.body.clientWidth * 0.66,
-	    //width: 620,
+	    width: document.body.clientWidth * 0.8,
+	    renderer: 'area',
+	    stroke: true,
 	    height: 300,
-	    renderer: 'line',
 	    series: series
 	});
 
@@ -111,7 +110,7 @@ function data_render(){
 
 	yAxis.render();
 */
-	var slider = new Rickshaw.Graph.RangeSlider( {
+	slider = new Rickshaw.Graph.RangeSlider( {
 	    graph: graph,
 	    element: $('#slider')
 	});
@@ -120,13 +119,14 @@ function data_render(){
     });
 }
 
-function events_render(){
-    d3.json("data/events.json", function(error, events){
+function events_render(file_name){
+    d3.json(file_name, function(error, events){
 	if(error) console.warm(error);
+	window.events = events;
 
 	var dataParse = d3.time.format("%Y-%m").parse;
-
-	events.forEach(function(d){
+	console.log("-------");
+	window.events.vandalismo.forEach(function(d){
 	    annotator.add(dataParse(d.date)/1000, d.event);
 	});
 
@@ -134,9 +134,23 @@ function events_render(){
     });
 }
 
-data_render();
-events_render();
+function switch_events(event_tag){
+    var events = document.getElementById("timeline");
+    events.innerHTML = "";
 
-document.getElementById("side_panel").onclick = function(d){
-    console.log(d);
+    annotator = new Rickshaw.Graph.Annotate( {
+	graph: graph,
+	element: document.getElementById('timeline')
+    });
+
+    var dataParse = d3.time.format("%Y-%m").parse;
+
+    window.events[event_tag].forEach(function(d){
+	annotator.add(dataParse(d.date)/1000, d.event);
+    });
+
+    annotator.update();
 }
+
+data_render();
+events_render("data/events.json");

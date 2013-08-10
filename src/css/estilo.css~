@@ -10,6 +10,7 @@
 section{
     border: none;
     border-top: 1px solid #EAEAEA;
+    padding: 10 0 10 0;
 }
 
 h1 {
@@ -90,5 +91,5 @@ svg {
 #side_panel{
     display: inline-block;
     vertical-align: top;
-    padding: 0 20px 20px 0;
+    padding: 0 20px 0px 0;
 }

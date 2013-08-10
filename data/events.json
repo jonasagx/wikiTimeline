@@ -1,4 +1,5 @@
-[{
+{
+    "geral": [{
 	"date": "2003-05", 
 	"event": "Mudança no design da Wikipédia<sup> <a href='https://wikipedia.org/wiki/Wikipédia:Notícias/2003'>ref</sup>"
     },{
@@ -14,4 +15,96 @@
 	"date": "2012-01",
 	"event": "Banner em todas as páginas com aviso sobre o SOPA"
     }
-]
+],
+    "vandalismo":[{
+	"date": "2004-09",
+	"event": "[[WP:ER]] - criada ER #4 (título absurdo)<ref>[[Wikipédia Discussão:Eliminação rápida/Arquivo 1#A partir de 10 de Setembro de 2004]]</ref>"
+    },{
+	"date": "2004-10",
+	"event": "[[WP:ER]] - criada ER #6 (spam)<ref>[[Wikipédia Discussão:Eliminação rápida/Arquivo 1#A partir de 15 de Outubro de 2004]]</ref>"
+    },{
+	"date": "2005-04",
+	"event": "[[WP:PB|Política de bloqueio]] - primeira documentação sobre bloqueio<ref>[{{fullurl:Wikipédia:Política de bloqueio|diff=498702}} Versão de abril de 2005 da WP:Política de bloqueio]</ref>"
+    },{
+	"date": "2005-09",
+	"event": "[[Wikipédia:Vandal Fighter]] - Início<ref>Embora a primeira versão do programa tenha sido criada em maio de 2005, a página de documentação foi criada em [{{fullurl:Wikipédia:Vandal Fighter|diff=820062}} setembro de 2005], então podemos supor que seu uso mais alargado só começou a partir daí</ref>"
+    },{
+	"date": "2005-12",
+	"event": "[[WP:ER]] - criada ER #20 (impróprio)<ref>[[Wikipédia:Votações/Reforma do sistema de eliminação]], votação que criou a ER 20</ref>"
+    },{
+	"date": "2006-01",
+	"event": "[[Wikipédia:Software/Anti-vandal tool]] - Início<ref>[{{fullurl:MediaWiki:Gadget-antivandaltool.js|diff=1223909}} Criação do script Anti-vandal tool], que viria a ser disponibilizado como gadget em 2012-03.</ref>"
+    },{
+	"date": "2006-03",
+	"event": "[[WP:Edição patrulhada|Edição patrulhada]] - ativado para administradores marcarem edições como patrulhadas<ref>Pedido no bugzilla: [[bugzilla:4500|4500 Enable recent changes patrol on Portuguese Wikipedia]]</ref>"
+    },{
+	"date": "2007-01",
+	"event": "Forçar pré-visualização da página para IPs - início<ref>[{{fullurl:MediaWiki:Monobook.js|oldid=3989983&diff=4843857}} Diff de 2007-01-31 de Mediawiki:Monobook.js] que incluiu o script para forçar a pre-visualização da página para os IPs</ref>"
+    },{
+	"date": "2007-05",
+	"event": "[[Wikipédia:Scripts/Reversão e avisos]] - início<ref>[{{fullurl:MediaWiki:Gadget-rev e avisos.js|diff=6142891}} Página do script Reversão e avisos criada em maio de 2007]</ref>"
+    },{
+	"date": "2007-05",
+	"event": "[[User:GOE|GOE]]: início do bot anti-vandalismo<ref>[//pt.wikipedia.org/w/index.php?limit=50&tagfilter=&title=Especial:Contribuições&contribs=user&target=GOE&namespace=&tagfilter=&year=2007&month=5 Primeira contribuição do bot GOE em 26 de maio de 2007]</ref>"
+    },{
+	"date": "2007-06",
+	"event": "[[WP:Edição patrulhada|Edição patrulhada]] - marca de edição patrulhada visível a usuários confirmados.<ref>[{{fullurl:Ajuda Discussão:Edição patrulhada|oldid=22471611}} Ajuda Discussão:Edição patrulhada#Deixar a marca de controle nas paginas novas visivel a todos os usuarios] (jun2007)</ref>"
+    },{
+	"date": "2007-12",
+	"event": "Caso Think Finance.<ref>[[Wikipédia:CheckUser/Pedidos de verificação/Fabiano Prata]]</ref>"
+    },{
+	"date": "2008-01",
+	"event": "Captcha - início<ref>[[Wikipédia:Esplanada/Arquivo/2008/Janeiro#Activação de Captcha para edições por IP]]</ref>"
+    },{
+	"date": "2008-01",
+	"event": "Forçar pré-visualização da página para IPs - fim, removida após a ativação do Captcha<ref>[{{fullurl:MediaWiki:Common.js|curid=780821&diff=9098432&oldid=7868882}}]</ref>"
+    },{
+	"date": "2008-06",
+	"event": "[[WP:PB|Política de bloqueio]] - reforma de 2008, que é a base da política atual<ref>[[Wikipédia:Votações/Nova política de bloqueio]]</ref>"
+    },{
+	"date": "2008-07",
+	"event": "[[WP:Huggle|Huggle]] - início<ref>[{{fullurl:Wikipédia:Huggle|diff=11313779}} Wikipédia:Huggle criada em 1 de Julho de 2008] , [{{fullurl:Wikipédia:Huggle/Config|diff=11313562}} Wikipédia:Huggle/Config criada em 1 de Julho de 2008]</ref>"
+    },{
+	"date": "2008-09",
+	"event": "[[User:Salebot|Salebot]] - início começa as operações na wiki.pt<ref>[//pt.wikipedia.org/w/index.php?limit=50&tagfilter=&title=Especial:Contribuições&contribs=user&target=Salebot&namespace=&tagfilter=&year=2008&month=9 Contribuições do Salebot de setembro de 2008], as primeiras reversões do bot.</ref>"
+    },{
+	"date": "2008-09",
+	"event": "[[WP:FB|Fastbuttons]] - versão 1<ref>[{{fullurl:MediaWiki:Gadget-fastbuttons.js|diff=12307840}} Script Fastbuttons criado em 16 de setembro de 2009]</ref>"
+    },{
+	"date": "2008-11",
+	"event": "[[User:GOE|GOE]] - fim do bot anti-vandalismo<ref>[{{fullurl:Especial:Contribuições/GOE|dir=prev&offset=20081115&target=GOE}} Contribuições do bot GOE de 14 de novembro de 2008], são as mais recentes</ref>"
+    },{
+	"date": "2009-07",
+	"event": "[[WP:Reversor|Reversor]] - criação do estatuto<ref>[[Wikipédia:Pedidos a administradores/Reversor/Beria, ChristianH, Darwinius e Alchimista]] - primeiro pedido de reversor</ref>"
+    },{
+	"date":"2009-04",
+	"event":"[[WP:Filtro de edições|Filtro de edições]] - início<ref>[[mediazilla:18315|Bug 18315 - instalation of AbuseFilter on pt.wikipedia]]</ref>"
+    },{
+	"date": "2009-10",
+	"event": "[[WP:Huggle|Huggle]] - passou a ser necessário fazer um pedido de semibot para se usar o Huggle<ref>[[Wikipédia:Esplanada/propostas/Uso do Huggle com aprovação (25set2009)]]</ref>"
+    },{
+	"date": "2010-06",
+	"event": "[[WP:FB|Fastbuttons]] - versão 2<ref>Versão 2 do Fastbuttons: [{{fullurl:MediaWiki:Gadget-fastbuttons.js|diff=20660621&oldid=19863212}} Atualização do script] e [{{fullurl:Wikipédia:Scripts/FastButtons|diff=20664806}} Atualização da documentação] ambas em 14 de junho de 2010</ref>"
+    },{
+	"date": "2011-04",
+	"event": "[[WP:Reversor|Reversor]] - Acesso a [[Especial:Páginas não vigiadas]]<ref>[[mediazilla:27563|Bug 27563 - Allow unwatchedpages right for rollbackers in Portuguese Wikipedia]]</ref>"
+    },{
+	"date": "2011-07",
+	"event": "[[MediaWiki:Gadget-RTRC.js|Gadget]] para ver as [{{fullurl:User:Krinkle/RTRC|withJS=MediaWiki:Gadget-RTRC.js&rclimit=25&rcshow_anon=on&rcshow_patrol=on&rcdir=asc&jumpstart=on#toggleHelp}} mudanças recentes ao vivo] - início<ref>[{{fullurl:MediaWiki:Gadget-RTRC.js|diff=26260796}} Página do script Usuário:Krinkle/RTRC criada em 27 de julho de 2011]</ref>"
+    },{
+	"date": "2012-02",
+	"event": "[[WP:Validação de páginas|Validação de páginas]] - Consenso para usar a extensão, porém não foi feito por não se ter definido as configurações.<ref>[[Wikipédia:Esplanada/propostas/Bloqueio de páginas sistematicamente vandalizadas (18fev2012)]]</ref> (conversa ainda 'em aberto', esperando alguém tomar a frente e sugerir as configurações, para a comunidade seguir e concordar)."
+    },{
+	"date": "2012-04",
+	"event": "[[WP:Filtro de edições|Filtro de edições]] - autoconfirmados receberam acesso aos registros do filtro<ref>[[Wikipédia:Esplanada/propostas/Permitir que mais editores possam filtrar os registros do filtro de edições (5mar2012)]]</ref>"
+    },{
+	"date": "2012-04",
+	"event": "[[WP:Reversor|Reversor]] - Período de testes (12 de abril até 10 de julho) para os reversores terem acesso parcial a ferramenta de bloqueio<ref>[[Wikipédia:Votações/Reversores bloqueando vândalos]]</ref>"
+    },{
+	"date": "2012-06",
+	"event": "[[WP:Huggle|Huggle]] - extinção dos pedidos de semibot, agora só pode usar Huggle quem for reversor.<ref>[{{fullurl:Wikipédia:Semirrobôs/pedidos|diff=30850790&oldid=30552023}} Alteração na página de pedidos de semibot], com base no consenso em [[Wikipédia:Esplanada/propostas/Alteração no método de aprovação de semi-bots (15mar2012)]]</ref>"
+    },{
+	"date": "2012-08",
+	"event": "[[WP:Proteção|Proteção]] - Criação de um nível de proteção intermediário entre {{WP|autoconfirmado}} e {{WP|administrador}}, a ser aplicado apenas em predefinições com muitos afluentes: {{WP|autorrevisor}}.<ref>[[Wikipédia:Esplanada/geral/Proteção de predefinições a nível de sysop (30jul2012)#Em que ficamos?]]</ref> (esperando [[bugzilla:39652|pedido no bugzilla]] ser atendido)"
+    }]
+}
