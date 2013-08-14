@@ -135,12 +135,12 @@ Rickshaw.Graph.HoverDetail = Rickshaw.Class.create({
 	},
 
 	show: function() {
-		this.visible = true;
-		this.element.classList.remove('inactive');
+	    this.visible = true;
+	    this.element.classList.remove('inactive');
 
-		if (typeof this.onShow == 'function') {
-			this.onShow();
-		}
+	    if (typeof this.onShow == 'function') {
+		this.onShow();
+	    }
 	},
 
 	render: function(args) {
@@ -218,6 +218,13 @@ Rickshaw.Graph.HoverDetail = Rickshaw.Class.create({
 			}.bind(this),
 			false
 		);
+
+		this.graph.element.addEventListener(
+				'onclick',
+				function(e) {
+					console.log("click!")
+				}.bind(this)
+			);
 	}
 });
 

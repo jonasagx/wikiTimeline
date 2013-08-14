@@ -2,10 +2,10 @@
 //Variables of global context
 var serie = [];
 var series = [];
-var annotator, graph, scales = [], data2, graph, legend, slider;
+var graph, scales = [], data2, graph, legend, slider;
 
 function data_render(){
-    d3.tsv("data/wiki_data.tsv", function(error, data){  
+    d3.tsv("data/wiki_data_simple.tsv", function(error, data){  
 	if(error) return console.warn(error);
 
 	var palette = new Rickshaw.Color.Palette( { scheme: 'spectrum14' } );
@@ -53,7 +53,7 @@ function data_render(){
 
 	graph = new Rickshaw.Graph( {
 	    element: document.getElementById("chart"),
-	    width: document.body.clientWidth * 0.8,
+	    width: document.body.clientWidth * 0.78,
 	    renderer: 'area',
 	    stroke: true,
 	    height: 300,
