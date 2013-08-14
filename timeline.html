@@ -1,52 +1,48 @@
-<!doctype>
-<meta charset="utf-8">
-<head>
+{% extends "base.html" %}
+{% block head %}
+
   <title>WikiTimeline</title>
   
-  <link rel="shortcut icon" href="wikipedia.ico" />
-
-  <link type="text/css" rel="stylesheet" href="ui/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
-  <link type="text/css" rel="stylesheet" href="src/css/graph.css">
-  <link type="text/css" rel="stylesheet" href="src/css/detail.css">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='timeline/ui/jquery-ui.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='timeline/src/css/graph.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='timeline/src/css/detail.css') }}">
   <link type="text/css" rel="stylesheet" href="src/css/legend.css">
   <link type="text/css" rel="stylesheet" href="src/css/estilo.css">
 
-  <script src="src/js/jquery.min.js"></script>
-  <script src="src/js/jquery-ui.min.js"></script>
+  <script src="{{ url_for('static', filename='timeline/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='timeline/jquery/jquery-ui.min.js') }}"></script>
 
-  <script src="d3.js"></script>
-  <script src="src/rickshaw.js"></script>
-  <script src="src/js/Rickshaw.js"></script>
-  <script src="src/js/Rickshaw.Class.js"></script>
-  <script src="src/js/Rickshaw.Compat.ClassList.js"></script>
-  <script src="src/js/Rickshaw.Graph.js"></script>
-  <script src="src/js/Rickshaw.Graph.Renderer.js"></script>
-  <script src="src/js/Rickshaw.Graph.Renderer.Area.js"></script>
-  <script src="src/js/Rickshaw.Graph.Renderer.Line.js"></script>
-  <script src="src/js/Rickshaw.Graph.Renderer.Bar.js"></script>
-  <script src="src/js/Rickshaw.Graph.Renderer.ScatterPlot.js"></script>
-  <script src="src/js/Rickshaw.Graph.RangeSlider.js"></script>
-  <script src="src/js/Rickshaw.Graph.HoverDetail.js"></script>
-  <script src="src/js/Rickshaw.Graph.Annotate.js"></script>
-  <script src="src/js/Rickshaw.Graph.Legend.js"></script>
-  <script src="src/js/Rickshaw.Graph.Axis.Time.js"></script>
-  <script src="src/js/Rickshaw.Graph.Behavior.Series.Toggle.js"></script>
-  <script src="src/js/Rickshaw.Graph.Behavior.Series.Order.js"></script>
-  <script src="src/js/Rickshaw.Graph.Behavior.Series.Highlight.js"></script>
-  <script src="src/js/Rickshaw.Graph.Smoother.js"></script>
-  <script src="src/js/Rickshaw.Graph.Unstacker.js"></script>
-  <script src="src/js/Rickshaw.Fixtures.Time.js"></script>
-  <script src="src/js/Rickshaw.Fixtures.Number.js"></script>
-  <script src="src/js/Rickshaw.Fixtures.Color.js"></script>
-  <script src="src/js/Rickshaw.Fixtures.RandomData.js"></script>
-  <script src="src/js/Rickshaw.Color.Palette.js"></script>
-  <script src="src/js/Rickshaw.Graph.Axis.Y.js"></script>
-	
-  <style>
-    
-  </style>
-</head>
-<body>
+  <script src="{{ url_for('static', filename='timeline/js/d3/d3.min.js"></script>
+  <script src="{{ url_for('static', filename='rickshaw/rickshaw.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Class.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Compat.ClassList.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Renderer.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Renderer.Area.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Renderer.Line.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Renderer.Bar.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Renderer.ScatterPlot.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.RangeSlider.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.HoverDetail.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Annotate.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Legend.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Axis.Time.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Behavior.Series.Toggle.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Behavior.Series.Order.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Behavior.Series.Highlight.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Smoother.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Unstacker.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Fixtures.Time.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Fixtures.Number.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Fixtures.Color.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Fixtures.RandomData.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Color.Palette.js') }}"></script>
+  <script src="{{ url_for('static', filename='rickshaw/Rickshaw.Graph.Axis.Y.js') }}"></script>
+
+{% endblock %}
+
+{% block content %}
 <div id="content">
   <h1>Linha do tempo da Wikipédia</h1>
   <h2>Versão ß</h2>
@@ -70,7 +66,6 @@
 </div>
 
 <!-- The source code goes here: -->
-<script src="src/js/main.js"></script>
+<script src="{{ url_for('static', filename='timeline/js/main.js') }}"></script>
 
-</body>
-</html>
+{% endblock %}
