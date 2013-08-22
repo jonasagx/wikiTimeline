@@ -54,7 +54,7 @@ function data_render(){
 	graph = new Rickshaw.Graph( {
 	    element: document.getElementById("chart"),
 	    width: document.body.clientWidth * 0.78,
-	    renderer: 'area',
+	    renderer: 'line',
 	    stroke: true,
 	    height: 300,
 	    series: series
