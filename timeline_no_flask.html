@@ -1,0 +1,78 @@
+<!doctype>
+<meta charset="utf-8">
+<head>
+  <title>WikiTimeline</title>
+  
+  <link rel="shortcut icon" href="wikipedia.ico" />
+
+  <link type="text/css" rel="stylesheet" href="ui/jquery-ui.css">
+  <link type="text/css" rel="stylesheet" href="src/css/graph.css">
+  <link type="text/css" rel="stylesheet" href="src/css/detail.css">
+  <link type="text/css" rel="stylesheet" href="src/css/legend.css">
+  <link type="text/css" rel="stylesheet" href="src/css/estilo.css">
+
+  <script src="src/js/jquery/jquery.min.js"></script>
+  <script src="src/js/jquery/jquery-ui.min.js"></script>
+
+  <script src="src/js/d3/d3.min.js"></script>
+  <script src="src/js/rickshaw.js"></script>
+  <script src="src/js/Rickshaw.js"></script>
+  <script src="src/js/Rickshaw.Class.js"></script>
+  <script src="src/js/Rickshaw.Compat.ClassList.js"></script>
+  <script src="src/js/Rickshaw.Graph.js"></script>
+  <script src="src/js/Rickshaw.Graph.Renderer.js"></script>
+  <script src="src/js/Rickshaw.Graph.Renderer.Area.js"></script>
+  <script src="src/js/Rickshaw.Graph.Renderer.Line.js"></script>
+  <script src="src/js/Rickshaw.Graph.Renderer.Bar.js"></script>
+  <script src="src/js/Rickshaw.Graph.Renderer.ScatterPlot.js"></script>
+  <script src="src/js/Rickshaw.Graph.RangeSlider.js"></script>
+  <script src="src/js/Rickshaw.Graph.HoverDetail.js"></script>
+  <script src="src/js/Rickshaw.Graph.Annotate.js"></script>
+  <script src="src/js/Rickshaw.Graph.Legend.js"></script>
+  <script src="src/js/Rickshaw.Graph.Axis.Time.js"></script>
+  <script src="src/js/Rickshaw.Graph.Behavior.Series.Toggle.js"></script>
+  <script src="src/js/Rickshaw.Graph.Behavior.Series.Order.js"></script>
+  <script src="src/js/Rickshaw.Graph.Behavior.Series.Highlight.js"></script>
+  <script src="src/js/Rickshaw.Graph.Smoother.js"></script>
+  <script src="src/js/Rickshaw.Graph.Unstacker.js"></script>
+  <script src="src/js/Rickshaw.Fixtures.Time.js"></script>
+  <script src="src/js/Rickshaw.Fixtures.Number.js"></script>
+  <script src="src/js/Rickshaw.Fixtures.Color.js"></script>
+  <script src="src/js/Rickshaw.Fixtures.RandomData.js"></script>
+  <script src="src/js/Rickshaw.Color.Palette.js"></script>
+  <script src="src/js/Rickshaw.Graph.Axis.Y.js"></script>
+	
+  <style>
+    
+  </style>
+</head>
+<body>
+<div id="content">
+  <h1>Linha do tempo da Wikipédia</h1>
+  <h2>Versão ß</h2>
+  <div id="side_panel"> 
+  <section>
+      <div id="legend"></div>
+    </section>
+    <section>
+      <form id="side_panel" name="events_selector">
+	Geral: <input type="radio" name="evento" value="geral" onClick="switch_events(this.value)"> <br/>
+	Vandalismo: <input type="radio" name="evento" checked="" value="vandalismo" onClick="switch_events(this.value)"> <br/>	
+	Estatutos: <input type="radio" name="evento" value="estatuto" onClick="switch_events(this.value)"> <br/>
+	Construção de artigos: <input type="radio" name="evento" value="construcao" onClick="switch_events(this.value)"> <br/>
+	Comunidade: <input type="radio" name="evento" value="comunidade" onClick="switch_events(this.value)"> <br/>
+      </form>
+    </section>
+  </div>
+  <div id="chart_container">
+    <div id="chart"></div>
+    <div id="timeline"></div>
+    <div id="slider"></div>
+  </div>
+</div>
+
+<!-- The source code goes here: -->
+<script src="src/js/main.js"></script>
+
+</body>
+</html>
