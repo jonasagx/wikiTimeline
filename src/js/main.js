@@ -1,8 +1,6 @@
 
 //Variables of global context
-var serie = [];
-var series = [];
-var graph, scales = [], data2, graph, legend, slider;
+var serie = [], series = [], scales = [], data2, graph, legend, annotator, slider;
 
 function data_render(){
     d3.tsv("data/wiki_data_simple.tsv", function(error, data){  
@@ -23,22 +21,7 @@ function data_render(){
 	keys.pop();
 
 	data2 = data;
-/*
-	var s = [];
-	max = Number.MIN_VALUE;
-	min = Number.MAX_VALUE;
-	keys.forEach(function(k){
-	    for(var i = 0; i < data.length; i++){
-		if(+data[i][k] < min && data[i][k] != " ") min = +data[i][k];
-		if(+data[i][k] > max && data[i][k] != " ") max = +data[i][k];
-	    }
 
-	    scales.push(d3.scale.linear().domain([min, max]).nice());
-	    console.log("Max:" + max + " Min:" + min + " V:" + k);
-	    min = Number.MAX_VALUE;
-	    max = Number.MIN_VALUE;
-	});
-*/
 	data.forEach(function(d){
 	    var date = dataParser(d.date).getTime()/1000;
 	    
@@ -46,17 +29,18 @@ function data_render(){
 		serie[k].push({ x: date, y: +d[keys[k]] });
 	    }
 	});
-	
+
+
 	for(var k = 0; k < keys.length; k++){
 	    series.push({ name: keys[k], data: serie[k], color: palette.color() });
 	}
 
-	graph = new Rickshaw.Graph( {
+	graph = new Rickshaw.Graph({
 	    element: document.getElementById("chart"),
-	    width: document.body.clientWidth * 0.78,
-	    renderer: 'line',
+	    width: document.body.clientWidth * 0.9,
+	    renderer: 'area',
 	    stroke: true,
-	    height: 300,
+	    height: 250,
 	    series: series
 	});
 
@@ -68,8 +52,8 @@ function data_render(){
 	    graph: graph,
 	    yFormatter: function(y) { return y},
 	    xFormatter: function(x){
-		var d = new Date(x * 1000);
-		return String(monthName[d.getMonth()] + " - " + d.getFullYear());
+			var d = new Date(x * 1000);
+			return String(monthName[d.getMonth()] + " - " + d.getFullYear());
 	    }
 	});
 

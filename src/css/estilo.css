@@ -11,6 +11,8 @@ section{
     border: none;
     border-top: 1px solid #EAEAEA;
     padding: 10 0 10 0;
+    float: left; 
+    margin: 1em;
 }
 
 h1 {
@@ -89,7 +91,8 @@ svg {
 }
 
 #side_panel{
-    display: inline-block;
+    !display: relative;
+    overflow-y: hidden;
     vertical-align: top;
     padding: 0 20px 0px 0;
 }
