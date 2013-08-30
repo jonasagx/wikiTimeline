@@ -53,7 +53,7 @@ function data_render(){
 	    yFormatter: function(y) { return y},
 	    xFormatter: function(x){
 			var d = new Date(x * 1000);
-			return String(monthName[d.getMonth()] + " - " + d.getFullYear());
+			return String(monthName[d.getMonth()] + "/" + d.getFullYear());
 	    }
 	});
 
